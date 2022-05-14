@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style2.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img class="logo" src="logo.png" alt="" />
+                <nav>
+                    <ul class="menu" id="menu-list">
+                        <li>
+                            <a href="http://">
+                                Game Controller
+                            </a>
+                        </li>
+                        <li><a href="http://">VR Accessories</a></li>
+                        <li><a href="http://">Media Remotes</a></li>
+                        <li><a href="http://">others</a></li>
+                    </ul>
+                </nav>
+                <img class="menu-icon" src="menu.png" alt="" style="" onclick="togglemenu()" />
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <h2>
+                        PS4 V2 <br />
+                        Dualshoc;
+                    </h2>
+                    <h3>Wireless Controller for PlayStaion 4</h3>
+                    <p>Compatile/ Generic</p>
+                    <h4>$23.50</h4>
+                    <button type="button">buy Now <img src="arrow.png" alt="" /></button>
+                </div>
+                <div class="col-2">
+                    <img src="controller.png" class="controller" alt="" />
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="add.png" alt="" />
+                        <p><small>Add to cart</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-link">
+             <img src="fb.png" alt="">
+             <img src="tw.png" alt="">
+             <img src="ig.png" alt="">
+
+            </div>
+
+        </div>
+
+        <script>
+            var menlist=document.getElementById('menu-list');
+            menlist.style.maxHeight="0px";
+            function togglemenu(){
+                if(menlist.style.maxHeight=="0px"){
+                    menlist.style.maxHeight="130px";
+                }else{
+                    menlist.style.maxHeight="0px";
+
+                }
+
+            }
+        </script>
+    </body>
+</html>
